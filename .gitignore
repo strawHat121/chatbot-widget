@@ -1,0 +1,68 @@
+# Sensitive files
+.env
+*.env.*
+secrets.json
+
+# Virtual environment (Python)
+.venv/
+venv/
+ENV/
+
+# Temporary data folders (backend-specific)
+backend/vector_stores/
+backend/org_data/
+*.faiss
+*.pkl  # Any pickled files (e.g., from FAISS)
+
+# Python cache and build files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+.installed.cfg
+*.egg
+dist/
+build/
+wheels/
+
+# Frontend/JS build files (if you add bundlers later)
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store  # macOS junk
+Thumbs.db  # Windows junk
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# Deployment-specific ignores (if using Docker or CI)
+Dockerfile*
+docker-compose*
+*.yaml  # If not part of code (e.g., temp configs)
+
+# Miscellaneous
+*.DS_Store
+.Apple*
+Icon?
+
+# Ignore any local test files or backups
+*.bak
+*.backup
+test-*
