@@ -63,7 +63,7 @@
             formData.append("message", userMsg);
 
             try {
-                const res = await fetch("http://localhost:5000/chat", {
+                const res = await fetch("https://chatbot-widget-vphk.onrender.com/chat", {
                     method: "POST",
                     body: formData,
                 });
